@@ -53,55 +53,105 @@
     <!--<em> tag used to empathize the text in a block level element this is most;y used by search engine and screen reader to empathize the text-->
     <!--There is a <strong> tag to empathize the text string and bold in HTMl tag.
       Its a inline element in html-->
-    <h2>I am ready to learn HTML.</h2>
+    <h2>Context about me</h2>
+    <ul>
+      <!--<a> tag used to link external link to our HTML doc and other link as well-->
+
+      <!--to link a external web link and wanna open it in new tab using target attribute "_black" value using following syntax
+    
+        <a href=<external_link target="_black"><description about the link></a>-->
+
+      <!--To download the content from the link using the download attribute from a <a> tag 
+        syntax:
+      
+          <a href=<external_link> download>description_to_link</a>-->
+
+      <!--To sent mail to the given email and Note should not add email direcly because spider search will try to spam mail
+        Syntax:
+            <a href=mailto:<email_id>Mail Me</a>
+      -->
+
+      <!--To add contact number in the HTML doc
+      
+          Syntax: 
+              <a href=tel:<contact_info>Contact Me</a>-->
+
+      <!-- To reference section id use the <a> tag
+        syntax:
+            <a href="#<section_id>">describution about the section tag</a>-->
+
+      <!-- To go back to top of the page use # in href attribute of <a> tag
+        Syntax:
+            <a href="#">Top to the page</a>-->
+
+      <li><a href="#daily_work">My daily work</a></li>
+      <li><a href="#planning_vacation">My Vacation Plan</a></li>
+      <li><a href="#place_to_visit">Place To Visit</a></li>
+      <li><a href="#place_not_to_visit">Place not To Visit</a></li>
+      <li><a href="#jobs">My Job History</a></li>
+      <li><a href="#certification_done">Certification</a></li>
+    </ul>
     <p>This is my first Web page.</p>
     <hr />
-
-    <h3>My daily Work</h3>
-    <p>
-      i wake up <br />
-      i eat <br />i sleep <br />repeat <br />
-    </p>
+    <section id="daily_work">
+      <h3>My daily Work</h3>
+      <ul>
+        <li>I wake in morning</li>
+        <li>I go for jogging</li>
+        <li>Learn new things</li>
+        <li>Do job</li>
+        <li>repeat</li>
+      </ul>
+    </section>
     <hr />
-
-    <h2>I am also planning a Vacation</h2>
-    <p>I am really working hard and i need a getaway time</p>
+    <section id="planning_vacation">
+      <h2>I am also planning a Vacation</h2>
+      <p>I am really working hard and i need a getaway time</p>
+    </section>
     <hr />
-
-    <h2>Place i like to visit:</h2>
-    <p>I like to visit santa monica to see <em>"Karatos"</em></p>
+    <section id="place_to_visit">
+      <h2>Place i like to visit:</h2>
+      <p>I like to visit santa monica to see <em>"Karatos"</em></p>
+    </section>
     <hr />
-
-    <h2>Places i don't like to visit</h2>
-    <p>I don't like to visit <strong>jail</strong> :)</p>
-    <hr />
-
+    <section id="place_not_to_visit">
+      <h2>Places i don't like to visit</h2>
+      <p>I don't like to visit <strong>jail</strong> :)</p>
+      <hr />
+    </section>
     <!--HTML entity used to create recerived keywords in HTML doc
     to use resurvied keyword using following syntax "&entity_name" "&#entity_number"-->
-    <h2>Job compeleted</h2>
-    <ol>
-      <li>BOTVFX - Intern</li>
-      <li>BOTVFX - juior pipeline TD</li>
-      <li>BOTVFX - pipeline TD</li>
-    </ol>
-    <h2>Certification Done</h2>
-    <ul>
-      <li>Java</li>
-      <li>SQL, PLSQL</li>
-      <li>JSP, Servlet</li>
-      <li>Python</li>
-    </ul>
-    <h2>Topics know &nbsp;</h2>
-    <dl>
-      <dt>JAVA</dt>
-      <dd>
-        - My first programming lanuage where i became strong in programming
-        lanuage.
-      </dd>
-      <dt>C</dt>
-      <dd>- My love of programming started here.</dd>
-      <dt>C++</dt>
-      <dd>- I learn C++ with alot of love and dream to create game engie.</dd>
-    </dl>
+    <section id="jobs">
+      <h2>Job compeleted</h2>
+      <ol>
+        <li>BOTVFX - Intern</li>
+        <li>BOTVFX - juior pipeline TD</li>
+        <li>BOTVFX - pipeline TD</li>
+      </ol>
+    </section>
+
+    <section id="certification_done">
+      <h2>Certification Done</h2>
+      <ul>
+        <li>Java</li>
+        <li>SQL, PLSQL</li>
+        <li>JSP, Servlet</li>
+        <li>Python</li>
+      </ul>
+    </section>
+    <section id="topics_know">
+      <h2>Topics know &nbsp;</h2>
+      <dl>
+        <dt>JAVA</dt>
+        <dd>
+          - My first programming lanuage where i became strong in programming
+          lanuage.
+        </dd>
+        <dt>C</dt>
+        <dd>- My love of programming started here.</dd>
+        <dt>C++</dt>
+        <dd>- I learn C++ with alot of love and dream to create game engie.</dd>
+      </dl>
+    </section>
   </body>
 </html>
